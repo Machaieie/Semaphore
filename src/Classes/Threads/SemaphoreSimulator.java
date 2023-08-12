@@ -9,7 +9,7 @@ public class SemaphoreSimulator extends JFrame {
 
     private JLabel semaphoreLabel;
     private SemaphoreThread semaphoreThread;
-    private ImageIcon redIcon, yellowIcon, greenIcon;
+    private ImageIcon redIcon, yellowIcon, greenIcon, personRed, presonGreen;
 
     public SemaphoreSimulator() {
         setTitle("Semaphore Simulator");
@@ -20,6 +20,8 @@ public class SemaphoreSimulator extends JFrame {
         redIcon = new ImageIcon("assets/semaforo_vermelho.png");
         yellowIcon = new ImageIcon("assets/semaforo_amarel.png");
         greenIcon = new ImageIcon("assets/semaforo_verde.png");
+        personRed = new ImageIcon("assets/pedestre_vermelho.png");
+        presonGreen = new ImageIcon("assets/pedestre_verde.png");
 
         semaphoreLabel = new JLabel(redIcon);
         add(semaphoreLabel, BorderLayout.CENTER);
